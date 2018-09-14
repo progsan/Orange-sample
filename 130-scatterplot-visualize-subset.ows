@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="Некоторые виджеты визуализации, такие как диаграмма рассеияния и некоторые виджеты данных проекта могут выделять экземпляры данных в подмножестве данных. В этом рабочем процессе диаграмма рассеяния визуализирует данные из файла входных данных, но также отмечает точки данных, которые были выбраны в таблице данных (выбранные строки).&#10;&#10;Рабочий процесс лучше всего работает, если открыты одновременно как диаграмма рассеяния, так и таблица данных." title="Визуализация подмножеств данных" version="2.0">
+	<nodes>
+		<node id="0" name="File" position="(45.0, 155.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owfile.OWFile" title="File" version="" />
+		<node id="1" name="Scatter Plot" position="(446.0, 153.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" title="Scatter Plot" version="" />
+		<node id="2" name="Data Table" position="(236.0, 262.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Data Subset" sink_node_id="1" source_channel="Selected Data" source_node_id="2" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="12" id="0" rect="(56.0, 339.0, 182.0, 124.0)" type="text/plain">(1) Откройте таблицу данных и выберите экземпляр данных или подмножество экземпляров (используйте клавишу Shift).</text>
+		<text font-family="Helvetica" font-size="12" id="1" rect="(355.0, -18.0, 150.0, 96.0)" type="text/plain">(2) Откройте диаграммму рассеивания, чтобы просматривать выделенные в таблице данные.</text>
+		<text font-family="Helvetica" font-size="12" id="2" rect="(364.0, 287.0, 200.0, 124.0)" type="text/plain">Двойной щелчок по каналу позволяет проверить потоки данных и убедиться, что из таблицы данных  выделенный набор подается как подмножество данных.</text>
+		<arrow end="(199.99999999999994, 281.0)" fill="#C1272D" id="3" start="(124.99999999999996, 326.0)" />
+		<arrow end="(446.0, 123.0)" fill="#C1272D" id="4" start="(446.0, 68.0)" />
+		<arrow end="(341.0, 221.0)" fill="#39B54A" id="5" start="(405.0, 284.0)" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYDAAAAHJlY2VudF9wYXRoc3ECXXEDY09y
+YW5nZS53aWRnZXRzLnV0aWxzLmZpbGVkaWFsb2dzClJlY2VudFBhdGgKcQQpgXEFfXEGKFgHAAAA
+YWJzcGF0aHEHWDQAAABDOi9PcmFuZ2UvbGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRz
+L2lyaXMudGFicQhYBgAAAHByZWZpeHEJWA8AAABzYW1wbGUtZGF0YXNldHNxClgHAAAAcmVscGF0
+aHELWAgAAABpcmlzLnRhYnEMWAUAAAB0aXRsZXENWAAAAABxDlgFAAAAc2hlZXRxD2gOWAsAAABm
+aWxlX2Zvcm1hdHEQTnViYVgLAAAAcmVjZW50X3VybHNxEV1xElgTAAAAc2F2ZWRXaWRnZXRHZW9t
+ZXRyeXETQzIB2dDLAAIAAAAAAhMAAAE8AAAEJQAAA1IAAAITAAABUgAABCUAAANSAAAAAAAAAAAF
+oHEUWAsAAABzaGVldF9uYW1lc3EVfXEWWAYAAABzb3VyY2VxF0sAWAMAAAB1cmxxGGgOWA0AAABk
+b21haW5fZWRpdG9ycRl9cRpYCwAAAF9fdmVyc2lvbl9fcRtLAVgQAAAAY29udGV4dF9zZXR0aW5n
+c3EcXXEdY09yYW5nZS53aWRnZXRzLnNldHRpbmdzCkNvbnRleHQKcR4pgXEffXEgKFgEAAAAdGlt
+ZXEhR0HW5wmeFHIlWAYAAAB2YWx1ZXNxIn1xIyhYCQAAAHZhcmlhYmxlc3EkXXElWAkAAAB4bHNf
+c2hlZXRxJmgOSv////+GcSdoGX1xKGgkXXEpKF1xKihYDAAAAHNlcGFsIGxlbmd0aHErY09yYW5n
+ZS5kYXRhLnZhcmlhYmxlCkNvbnRpbnVvdXNWYXJpYWJsZQpxLEsAaA6IZV1xLShYCwAAAHNlcGFs
+IHdpZHRocS5oLEsAaA6IZV1xLyhYDAAAAHBldGFsIGxlbmd0aHEwaCxLAGgOiGVdcTEoWAsAAABw
+ZXRhbCB3aWR0aHEyaCxLAGgOiGVdcTMoWAQAAABpcmlzcTRjT3JhbmdlLmRhdGEudmFyaWFibGUK
+RGlzY3JldGVWYXJpYWJsZQpxNUsBWCwAAABJcmlzLXNldG9zYSwgSXJpcy12ZXJzaWNvbG9yLCBJ
+cmlzLXZpcmdpbmljYXE2iWVlc2gbSwF1WAoAAABhdHRyaWJ1dGVzcTcoWAwAAABzZXBhbCBsZW5n
+dGhxOEsChnE5WAsAAABzZXBhbCB3aWR0aHE6SwKGcTtYDAAAAHBldGFsIGxlbmd0aHE8SwKGcT1Y
+CwAAAHBldGFsIHdpZHRocT5LAoZxP3RxQFgFAAAAbWV0YXNxQSlYCgAAAGNsYXNzX3ZhcnNxQlgE
+AAAAaXJpc3FDXXFEKFgLAAAASXJpcy1zZXRvc2FxRVgPAAAASXJpcy12ZXJzaWNvbG9ycUZYDgAA
+AElyaXMtdmlyZ2luaWNhcUdlhnFIhXFJWBIAAABtb2RpZmllZF92YXJpYWJsZXNxSl1xS3ViYXUu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX3NhbXBsZXEBiFgTAAAAYXV0b19zZW5kX3NlbGVjdGlvbnECiFgSAAAA
+Y29udHJvbEFyZWFWaXNpYmxlcQOIWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQRDMgHZ0MsAAgAA
+AAACOQAAAA8AAAUIAAAC6wAAAkEAAAAqAAAFAAAAAuMAAAAAAAAAAAVWcQVYDwAAAHNlbGVjdGlv
+bl9ncm91cHEGTlgRAAAAdG9vbGJhcl9zZWxlY3Rpb25xB0sAWAUAAABncmFwaHEIfXEJKFgLAAAA
+YWxwaGFfdmFsdWVxCkuAWA0AAABjbGFzc19kZW5zaXR5cQuJWBEAAABqaXR0ZXJfY29udGludW91
+c3EMiVgLAAAAaml0dGVyX3NpemVxDUsKWBMAAABsYWJlbF9vbmx5X3NlbGVjdGVkcQ6JWAsAAABw
+b2ludF93aWR0aHEPSwpYCQAAAHNob3dfZ3JpZHEQiVgLAAAAc2hvd19sZWdlbmRxEYhYDQAAAHNo
+b3dfcmVnX2xpbmVxEolYEQAAAHRvb2x0aXBfc2hvd3NfYWxscROJdVgLAAAAX192ZXJzaW9uX19x
+FEsCWBAAAABjb250ZXh0X3NldHRpbmdzcRVdcRZjT3JhbmdlLndpZGdldHMuc2V0dGluZ3MKQ29u
+dGV4dApxFymBcRh9cRkoWA4AAABvcmRlcmVkX2RvbWFpbnEaXXEbKFgMAAAAc2VwYWwgbGVuZ3Ro
+cRxLAoZxHVgLAAAAc2VwYWwgd2lkdGhxHksChnEfWAwAAABwZXRhbCBsZW5ndGhxIEsChnEhWAsA
+AABwZXRhbCB3aWR0aHEiSwKGcSNYBAAAAGlyaXNxJEsBhnElZVgFAAAAbWV0YXNxJn1xJ1gKAAAA
+YXR0cmlidXRlc3EofXEpKGgiSwJoHEsCaCRLAWggSwJoHksCdVgGAAAAdmFsdWVzcSp9cSsoWAYA
+AABhdHRyX3hxLFgMAAAAc2VwYWwgbGVuZ3RocS1LZoZxLlgGAAAAYXR0cl95cS9YCwAAAHNlcGFs
+IHdpZHRocTBLZoZxMWgIfXEyKFgKAAAAYXR0cl9jb2xvcnEzWAQAAABpcmlzcTRLZYZxNVgKAAAA
+YXR0cl9sYWJlbHE2Tkr+////hnE3WAoAAABhdHRyX3NoYXBlcThOSv7///+GcTlYCQAAAGF0dHJf
+c2l6ZXE6Tkr+////hnE7dWgUSwJ1WAQAAAB0aW1lcTxHQdbnCZ4pmy11YmF1Lg==
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAACMAAAC+AAADUgAAAqIAAAArAAAA2QAAA0oA
+AAKaAAAAAAAAAAAFVnEHWAsAAABzZWxlY3Rfcm93c3EIiFgVAAAAc2hvd19hdHRyaWJ1dGVfbGFi
+ZWxzcQmIWBIAAABzaG93X2Rpc3RyaWJ1dGlvbnNxColYCwAAAF9fdmVyc2lvbl9fcQtLAVgQAAAA
+Y29udGV4dF9zZXR0aW5nc3EMXXENY09yYW5nZS53aWRnZXRzLnNldHRpbmdzCkNvbnRleHQKcQ4p
+gXEPfXEQKFgOAAAAb3JkZXJlZF9kb21haW5xEV1xEihYDAAAAHNlcGFsIGxlbmd0aHETSwKGcRRY
+CwAAAHNlcGFsIHdpZHRocRVLAoZxFlgMAAAAcGV0YWwgbGVuZ3RocRdLAoZxGFgLAAAAcGV0YWwg
+d2lkdGhxGUsChnEaWAQAAABpcmlzcRtLAYZxHGVYBQAAAG1ldGFzcR19cR5YCgAAAGF0dHJpYnV0
+ZXNxH31xIChoGUsCaBNLAmgbXXEhKFgLAAAASXJpcy1zZXRvc2FxIlgPAAAASXJpcy12ZXJzaWNv
+bG9ycSNYDgAAAElyaXMtdmlyZ2luaWNhcSRlaBdLAmgVSwJ1WAYAAAB2YWx1ZXNxJX1xJihYDQAA
+AHNlbGVjdGVkX2NvbHNxJ11xKChLAEsBSwJLA0sEZVgNAAAAc2VsZWN0ZWRfcm93c3EpXXEqKEt4
+S3lLekt7S3xLfUt+S39LgEuBS4JLg0uES4VLhmVoC0sBdVgEAAAAdGltZXErR0HW5wmeIj/fdWJh
+dS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
